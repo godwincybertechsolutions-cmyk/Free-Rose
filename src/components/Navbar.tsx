@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShoppingBag, Ruler, Sparkles, Heart } from 'lucide-react';
 import { useNavigation } from '../context/NavigationContext';
+import freeRoseLogo from '../Public/assets/Logo/Free Rose — Concept A_ Unbound wordmark-Photoroom.png';
 
 interface NavbarProps {
   cartCount: number;
@@ -16,14 +17,18 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="sticky top-0 z-40 w-full bg-black/90 backdrop-blur-md border-b border-zinc-800 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
-        {/* Zone 1: Brand Wordmark */}
+        {/* Zone 1: Brand Wordmark / Logo */}
         <button
           onClick={() => navigateTo('home')}
           className="text-left group flex items-center gap-3 focus:outline-none"
+          aria-label="Free Rose Home"
         >
-          <span className="font-editorial text-2xl sm:text-3xl tracking-[0.25em] uppercase font-light text-white group-hover:text-zinc-300 transition-colors">
-            FREE ROSE
-          </span>
+          <img
+            src={freeRoseLogo}
+            alt="Free Rose"
+            className="h-10 sm:h-12 w-auto object-contain invert brightness-200 transition-all duration-300 group-hover:opacity-80"
+            style={{ filter: 'invert(1) brightness(2)' }}
+          />
           <span className="hidden sm:inline-block text-[10px] tracking-[0.3em] uppercase text-zinc-500 font-technical border-l border-zinc-800 pl-3">
             Atelier
           </span>
