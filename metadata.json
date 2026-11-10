@@ -1,0 +1,6 @@
+{
+  "name": "Free Rose | Luxury Screen Print Apparel",
+  "description": "High-fashion screen printed apparel and archival canvas art by Free Rose. Dedicated to Rose. You deserve your flowers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
