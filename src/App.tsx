@@ -10,8 +10,6 @@ import { CollectionsPage } from './pages/CollectionsPage';
 import { CollectionDetailPage } from './pages/CollectionDetailPage';
 import { AtelierPage } from './pages/AtelierPage';
 import { LookbookPage } from './pages/LookbookPage';
-import { StoryPage } from './pages/StoryPage';
-import { CraftsmanshipPage } from './pages/CraftsmanshipPage';
 import { SizingPage } from './pages/SizingPage';
 
 import { PRODUCT_WANISA_JACKET } from './data/products';
@@ -182,14 +180,6 @@ function MainApp() {
 
         {currentPage === 'lookbook' && (
           <LookbookPage />
-        )}
-
-        {currentPage === 'story' && (
-          <StoryPage />
-        )}
-
-        {currentPage === 'craftsmanship' && (
-          <CraftsmanshipPage />
         )}
 
         {currentPage === 'sizing' && (

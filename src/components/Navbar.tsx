@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag, Ruler, Sparkles, Heart } from 'lucide-react';
+import { ShoppingBag, Ruler, Sparkles } from 'lucide-react';
 import { useNavigation } from '../context/NavigationContext';
 import freeRoseLogo from '../Public/assets/Logo/Free Rose — Concept A_ Unbound wordmark-Photoroom.png';
 
@@ -65,25 +65,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             Lookbook
           </button>
-
-          <button
-            onClick={() => navigateTo('craftsmanship')}
-            className={`hover:text-white transition-colors whitespace-nowrap shrink-0 py-1 border-b ${
-              currentPage === 'craftsmanship' ? 'text-white border-white' : 'border-transparent'
-            }`}
-          >
-            Craftsmanship
-          </button>
-
-          <button
-            onClick={() => navigateTo('story')}
-            className={`hover:text-white transition-colors whitespace-nowrap shrink-0 py-1 border-b flex items-center gap-1.5 ${
-              currentPage === 'story' ? 'text-white border-white' : 'border-transparent'
-            }`}
-          >
-            <Heart className="w-3 h-3 text-zinc-400" />
-            <span>Homage to Rose</span>
-          </button>
         </nav>
 
         {/* Zone 3: Sizing Matrix & Bag Action */}
@@ -133,12 +114,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           className={currentPage === 'lookbook' ? 'text-white font-bold' : ''}
         >
           Lookbook
-        </button>
-        <button 
-          onClick={() => navigateTo('story')}
-          className={currentPage === 'story' ? 'text-white font-bold' : ''}
-        >
-          Rose Story
         </button>
         <button 
           onClick={() => navigateTo('sizing')}

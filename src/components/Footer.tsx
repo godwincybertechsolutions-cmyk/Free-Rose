@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigation } from '../context/NavigationContext';
 import { Heart, ArrowRight, Check } from 'lucide-react';
+import freeRoseLogo from '../Public/assets/Logo/Free Rose — Concept A_ Unbound wordmark-Photoroom.png';
 
 export const Footer: React.FC = () => {
   const { navigateTo } = useNavigation();
@@ -85,12 +86,18 @@ export const Footer: React.FC = () => {
           
           {/* Brand Column */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="space-y-2">
+            <div className="space-y-3">
               <button
                 onClick={() => navigateTo('home')}
-                className="text-left font-editorial text-3xl sm:text-4xl tracking-[0.2em] uppercase font-light text-white block hover:text-zinc-300 transition-colors"
+                className="text-left group block focus:outline-none"
+                aria-label="Free Rose Home"
               >
-                FREE ROSE
+                <img
+                  src={freeRoseLogo}
+                  alt="Free Rose"
+                  className="h-12 sm:h-14 w-auto object-contain invert brightness-200 transition-all duration-300 group-hover:opacity-80"
+                  style={{ filter: 'invert(1) brightness(2)' }}
+                />
               </button>
               <p className="font-editorial text-xl italic text-zinc-400">
                 "You deserve your flowers."
@@ -177,14 +184,6 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs font-technical text-zinc-400">
               <li>
                 <button 
-                  onClick={() => navigateTo('story')}
-                  className="hover:text-white transition-colors uppercase tracking-wider text-left"
-                >
-                  The Story of Rose
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => navigateTo('lookbook')}
                   className="hover:text-white transition-colors uppercase tracking-wider text-left"
                 >
@@ -193,10 +192,10 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => navigateTo('craftsmanship')}
+                  onClick={() => navigateTo('atelier')}
                   className="hover:text-white transition-colors uppercase tracking-wider text-left"
                 >
-                  Silkscreen Science &amp; Inks
+                  1-of-1 Atelier Commission
                 </button>
               </li>
               <li>
@@ -205,14 +204,6 @@ export const Footer: React.FC = () => {
                   className="hover:text-white transition-colors uppercase tracking-wider text-left"
                 >
                   Sizing Matrix (S to XL)
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => navigateTo('atelier')}
-                  className="hover:text-white transition-colors uppercase tracking-wider text-left"
-                >
-                  1-of-1 Atelier Commission
                 </button>
               </li>
             </ul>

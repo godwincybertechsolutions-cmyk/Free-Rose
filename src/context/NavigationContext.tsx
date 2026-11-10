@@ -7,8 +7,6 @@ export type PageRoute =
   | 'collection-detail'
   | 'atelier'
   | 'lookbook'
-  | 'story'
-  | 'craftsmanship'
   | 'sizing';
 
 interface NavigationContextType {
@@ -41,10 +39,6 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         setCurrentPage('atelier');
       } else if (hash === 'lookbook') {
         setCurrentPage('lookbook');
-      } else if (hash === 'story') {
-        setCurrentPage('story');
-      } else if (hash === 'craftsmanship') {
-        setCurrentPage('craftsmanship');
       } else if (hash === 'sizing') {
         setCurrentPage('sizing');
       } else {

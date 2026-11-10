@@ -114,10 +114,10 @@ export const HomePage: React.FC<HomePageProps> = ({
                     </span>
                   </div>
                   <button
-                    onClick={() => navigateTo('story')}
+                    onClick={() => navigateTo('collections')}
                     className="text-[11px] tracking-[0.2em] uppercase font-technical text-zinc-300 hover:text-white underline underline-offset-4"
                   >
-                    Read The Story
+                    Explore Collections
                   </button>
                 </div>
               </div>
@@ -286,10 +286,10 @@ export const HomePage: React.FC<HomePageProps> = ({
             </p>
             <div className="pt-2">
               <button
-                onClick={() => navigateTo('story')}
+                onClick={() => navigateTo('atelier')}
                 className="text-xs font-technical uppercase tracking-widest text-white hover:text-zinc-300 underline underline-offset-4 flex items-center gap-2"
               >
-                <span>Read The Complete Brand Story</span>
+                <span>Commission Bespoke Atelier Piece</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
