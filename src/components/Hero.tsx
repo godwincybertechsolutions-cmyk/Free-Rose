@@ -1,6 +1,6 @@
 import React from 'react';
 import { HERO_EDITORIAL_IMAGE } from '../data/products';
-import { ArrowRight, Sparkles, Layers } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface HeroProps {
   onExploreCollections: () => void;
@@ -23,10 +23,6 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-6 flex flex-col justify-center space-y-8">
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-zinc-400 font-technical">
-                <span>Atelier Edition</span>
-                <span aria-hidden="true" className="text-zinc-600">·</span>
-                <span>Nairobi &amp; Global Runway</span>
-                <span aria-hidden="true" className="text-zinc-600">·</span>
                 <span>Monochrome Series</span>
               </div>
 
@@ -34,14 +30,8 @@ export const Hero: React.FC<HeroProps> = ({
                 You Deserve Your Flowers.
               </h1>
 
-              <p className="font-editorial italic text-xl sm:text-2xl text-zinc-300 font-light max-w-xl">
-                "My mother Rose is the greatest presence in my life. We do not wait for tomorrow to honor the ones who gave us roots."
-              </p>
-            </div>
 
-            <p className="font-body text-sm sm:text-base text-zinc-400 leading-relaxed max-w-lg font-light">
-              Free Rose crafts high-fashion screen printed apparel and archival canvas art in an uncompromising black and white palette. Curated into six thematic collections spanning Ladies, Men, and Unisex tailoring from Small to Extra Large.
-            </p>
+            </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
@@ -57,8 +47,7 @@ export const Hero: React.FC<HeroProps> = ({
                 onClick={onOpenAtelier}
                 className="inline-flex items-center justify-center gap-2.5 bg-zinc-950 text-white hover:bg-zinc-900 border border-zinc-700 hover:border-zinc-500 transition-colors px-6 py-4 text-xs font-medium tracking-[0.2em] uppercase"
               >
-                <Sparkles className="w-3.5 h-3.5 text-zinc-300" />
-                <span>Custom Screen Print Atelier</span>
+                <span>Custom Atelier</span>
               </button>
             </div>
 

@@ -37,10 +37,6 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="lg:col-span-6 flex flex-col justify-center space-y-8">
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-zinc-400 font-technical">
-                  <span>Atelier Edition</span>
-                  <span aria-hidden="true" className="text-zinc-600">·</span>
-                  <span>Nairobi &amp; Global Runway</span>
-                  <span aria-hidden="true" className="text-zinc-600">·</span>
                   <span>Monochrome Series</span>
                 </div>
 
@@ -48,14 +44,8 @@ export const HomePage: React.FC<HomePageProps> = ({
                   You Deserve Your Flowers.
                 </h1>
 
-                <p className="font-editorial italic text-xl sm:text-2xl text-zinc-300 font-light max-w-xl">
-                  "My mother Rose is the greatest presence in my life. We do not wait for tomorrow to honor the ones who gave us roots."
-                </p>
-              </div>
 
-              <p className="font-body text-sm sm:text-base text-zinc-400 leading-relaxed max-w-lg font-light">
-                Free Rose crafts high-fashion screen printed apparel and archival canvas art in an uncompromising black and white palette. Curated into six thematic collections spanning Ladies, Men, and Unisex tailoring from Small to Extra Large.
-              </p>
+              </div>
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
@@ -71,8 +61,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   onClick={() => navigateTo('atelier')}
                   className="inline-flex items-center justify-center gap-2.5 bg-zinc-950 text-white hover:bg-zinc-900 border border-zinc-700 hover:border-zinc-500 transition-colors px-6 py-4 text-xs font-medium tracking-[0.2em] uppercase"
                 >
-                  <Sparkles className="w-3.5 h-3.5 text-zinc-300" />
-                  <span>Custom Screen Print Atelier</span>
+                  <span>Custom Atelier</span>
                 </button>
               </div>
 
@@ -206,7 +195,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               Atelier Highlights
             </span>
             <h2 className="font-editorial text-3xl sm:text-4xl text-white font-normal">
-              Signature Screen-Printed Editions
+              Signature Editions
             </h2>
           </div>
           <button
@@ -236,14 +225,11 @@ export const HomePage: React.FC<HomePageProps> = ({
           <div className="lg:col-span-8 space-y-4">
             <div className="flex items-center gap-2 text-xs font-technical tracking-[0.25em] uppercase text-zinc-400">
               <Sparkles className="w-3.5 h-3.5 text-zinc-300" />
-              <span>Bespoke 1-of-1 Service</span>
+              <span>1-of-1 Service</span>
             </div>
             <h3 className="font-editorial text-3xl sm:text-5xl text-white font-normal text-balance">
-              The Free Rose Screen Print Atelier
+              The Free Rose Print Atelier
             </h3>
-            <p className="font-body text-xs sm:text-sm text-zinc-400 font-light max-w-xl leading-relaxed">
-              Design a personalized piece. Select your garment canvas (Tee, Denim Jacket, Mesh Jersey, Denim Trouser, Shorts, or Stretched Canvas), screen print placement, botanical rose artwork, and inscribe your personal flower dedication.
-            </p>
           </div>
           <div className="lg:col-span-4 flex flex-col gap-3 justify-center">
             <button

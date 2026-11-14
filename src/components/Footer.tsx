@@ -105,7 +105,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="font-body text-xs sm:text-sm text-zinc-400 font-light leading-relaxed max-w-sm">
-              Luxury screen print apparel and archival gallery art inspired by maternal devotion to Rose. Crafted in Nairobi using discharge inks, 3D puff formulations, and heavyweight Japanese selvedge denim.
+              Luxury  print apparel and archival gallery art inspired by giving people their roses. Crafted in Nairobi using discharge inks, 3D puff formulations, and heavyweight Material.
             </p>
 
             <div className="pt-2 flex items-center gap-2 text-xs font-technical text-zinc-500 uppercase tracking-widest">
