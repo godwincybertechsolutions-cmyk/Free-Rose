@@ -85,9 +85,9 @@ export const LookbookPage: React.FC = () => {
             <span className="font-technical text-[10px] tracking-widest uppercase text-zinc-500 block">
               Directive 03 // Unisex
             </span>
-            <h3 className="font-editorial text-2xl text-white">The 1-of-1 Atelier Monogram</h3>
+            <h3 className="font-editorial text-2xl text-white">The 1-of-1 Apparel Monogram</h3>
             <p className="font-body text-xs text-zinc-400 font-light leading-relaxed">
-              Commission a tailored heavyweight tee in our atelier with your custom dedication text. Styled clean with straight selvedge denim trousers, emphasizing the hand-pulled silk screen artwork on the back.
+              Commission a tailored heavyweight tee in our Apparel studio with optional custom print text. Styled clean with straight selvedge denim trousers, emphasizing the hand-pulled silk screen artwork on the back.
             </p>
           </div>
         </div>
@@ -95,13 +95,13 @@ export const LookbookPage: React.FC = () => {
         <div className="p-8 bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1">
             <span className="font-editorial text-2xl text-white block">Ready to Commission Your Piece?</span>
-            <span className="text-xs text-zinc-400 font-light">Enter our interactive screen print atelier or explore all ready-to-wear garments.</span>
+            <span className="text-xs text-zinc-400 font-light">Enter our interactive screen print Apparel studio or explore all ready-to-wear garments.</span>
           </div>
           <button
             onClick={() => navigateTo('atelier')}
             className="px-6 py-3.5 bg-white text-black font-semibold uppercase tracking-[0.2em] text-xs hover:bg-zinc-200 transition-colors whitespace-nowrap"
           >
-            Enter Custom Atelier
+            Enter Custom Apparel
           </button>
         </div>
       </section>

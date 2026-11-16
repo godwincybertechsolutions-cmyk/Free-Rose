@@ -115,7 +115,7 @@ export const CollectionDetailPage: React.FC<CollectionDetailPageProps> = ({
               className="px-5 py-3 bg-white text-black text-xs font-semibold uppercase tracking-[0.2em] hover:bg-zinc-200 transition-colors flex items-center gap-2"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Custom Atelier Commission</span>
+              <span>Custom Apparel Commission</span>
             </button>
             <button
               onClick={() => navigateTo('sizing')}
@@ -138,7 +138,7 @@ export const CollectionDetailPage: React.FC<CollectionDetailPageProps> = ({
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
           <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-technical uppercase tracking-wider text-zinc-400">
             <span>Free Rose Archive</span>
-            <span>Nairobi Atelier</span>
+            <span>Nairobi Apparel</span>
           </div>
         </div>
       </div>
@@ -200,7 +200,7 @@ export const CollectionDetailPage: React.FC<CollectionDetailPageProps> = ({
       ) : (
         <div className="py-16 text-center border border-zinc-800 p-8 space-y-4">
           <h3 className="font-editorial text-2xl text-white">No items match this sub-filter</h3>
-          <p className="text-xs text-zinc-400">Reset your filters or commission a bespoke 1-of-1 piece in our Atelier.</p>
+          <p className="text-xs text-zinc-400">Reset your filters or commission a bespoke 1-of-1 custom piece.</p>
           <button
             onClick={() => { setSelectedGender('all'); setSelectedCategory('all'); }}
             className="px-6 py-2 border border-zinc-700 text-xs font-technical uppercase tracking-widest text-white"

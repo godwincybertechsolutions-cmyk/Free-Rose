@@ -54,10 +54,10 @@ export interface CustomScreenPrintConfig {
   garmentType: 'Heavyweight Luxury Tee' | 'Raw Denim Jacket' | 'Selvedge Denim Trouser' | 'Mesh Jersey' | 'Court Shorts' | 'Archival Canvas';
   garmentColor: 'Obsidian Black' | 'Chalk White';
   placement: 'Oversized Back Center' | 'Left Chest Emblem' | 'Full Front Graphic' | 'Sleeve & Trouser Stamp';
-  roseMotif: 'Signature Blooming Rose' | 'Rose Stem & Thorns' | 'Geometric Kenyan Rose' | 'Abstract Painterly Rose';
+  customArtworkName: string;
+  customArtworkDataUrl?: string;
   inkFinish: InkFinish;
   customDedicationText: string;
-  customInitials: string;
   size: ApparelSize;
   gender: GenderType;
 }

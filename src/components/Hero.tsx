@@ -47,7 +47,7 @@ export const Hero: React.FC<HeroProps> = ({
                 onClick={onOpenAtelier}
                 className="inline-flex items-center justify-center gap-2.5 bg-zinc-950 text-white hover:bg-zinc-900 border border-zinc-700 hover:border-zinc-500 transition-colors px-6 py-4 text-xs font-medium tracking-[0.2em] uppercase"
               >
-                <span>Custom Atelier</span>
+                <span>Custom Apparel</span>
               </button>
             </div>
 
@@ -86,7 +86,7 @@ export const Hero: React.FC<HeroProps> = ({
                     Campaign AW26
                   </span>
                   <span className="font-editorial text-lg tracking-wide text-white">
-                    Homage to Rose · The Botanical Silk Screen
+                    Homage to Rose
                   </span>
                 </div>
                 <button

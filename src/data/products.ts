@@ -45,7 +45,7 @@ export const COLLECTIONS_DATA = [
   {
     id: 'custom',
     name: 'Custom Bespoke Collection',
-    tagline: '1-of-1 Tailored Screen Print Atelier',
+    tagline: '1-of-1 Tailored Screen Print Apparel',
     description: 'Bespoke customization suite. Select garment, ink depth (3D puff, discharge ink, foil shimmer), flower placement, and personalize a dedication to your own hero.',
     featuredTag: 'Bespoke Studio'
   },
@@ -155,7 +155,7 @@ export const PRODUCTS_CATALOG: Product[] = [
     fabricDetails: '13.5oz Rigid Cotton Denim, front double pleats, horn button closure.',
     screenPrintInk: 'Matte Water-Base Discharge',
     image: PRODUCT_WANISA_JACKET,
-    editionLimit: 'Limited Atelier Edition'
+    editionLimit: 'Limited Apparel Edition'
   },
 
   // 2. MASHUJAA COLLECTION
@@ -278,7 +278,7 @@ export const PRODUCTS_CATALOG: Product[] = [
     availableSizes: ['M', 'L', 'XL'],
     price: 650,
     description: 'Large-scale hand-stretched 480 GSM organic cotton canvas. Features a dramatic multi-layered monochrome screen print of an unfolding blooming rose, stamped with high-contrast serif typography "YOU DESERVE YOUR FLOWERS". Suitable for luxury residences and art galleries.',
-    screenPrintStory: 'Silkscreened with fine art archival ink on gesso-primed heavy cotton canvas, individually hand-signed and numbered by the Free Rose atelier.',
+    screenPrintStory: 'Silkscreened with fine art archival ink on gesso-primed heavy cotton canvas, individually hand-signed and numbered by Free Rose.',
     fabricDetails: '480 GSM 100% Unbleached Cotton Canvas, 1.5-inch solid pine stretcher bars, ready to hang.',
     screenPrintInk: 'High-Density 3D Puff Print',
     image: PRODUCT_CANVAS_ART,
@@ -377,7 +377,7 @@ export const PRODUCTS_CATALOG: Product[] = [
   // 6. CUSTOM COLLECTION
   {
     id: 'custom-01',
-    name: 'Bespoke 1-of-1 Tailored Screen Print Atelier Piece',
+    name: 'Custom Piece',
     collectionId: 'custom',
     collectionName: 'Custom Bespoke Collection',
     category: 'ts',
@@ -385,8 +385,8 @@ export const PRODUCTS_CATALOG: Product[] = [
     gender: 'unisex',
     availableSizes: ['S', 'M', 'L', 'XL'],
     price: 195,
-    description: 'Your personal dedication made wearable. Customize your garment silhouette, screen print placement, ink finish (3D puff, discharge, crackle, silver foil), and personalize a dedication to your mother or hero.',
-    screenPrintStory: 'Individually burned silk screen screens prepared by master printers in our atelier.',
+    description: 'Make the garment your canvas. Choose a silhouette, upload your own design, set its placement, and select a screen print finish.',
+    screenPrintStory: 'Individually burned silk screens prepared by master printers in Nairobi.',
     fabricDetails: 'Choice of 320 GSM Cotton, 14oz Denim, or 280 GSM Mesh.',
     screenPrintInk: 'High-Density 3D Puff Print',
     image: HERO_EDITORIAL_IMAGE,

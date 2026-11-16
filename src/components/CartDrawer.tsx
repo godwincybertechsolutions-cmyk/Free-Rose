@@ -58,7 +58,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
         {/* Top Header */}
         <div className="p-6 border-b border-zinc-800 flex items-center justify-between">
           <div className="space-y-0.5">
-            <span className="font-editorial text-2xl text-white">Your Atelier Bag</span>
+            <span className="font-editorial text-2xl text-white">Your Apparel Bag</span>
             <span className="block text-[11px] font-technical text-zinc-500 uppercase tracking-widest">
               {items.length} {items.length === 1 ? 'Creation' : 'Creations'} · Free Worldwide Courier
             </span>
@@ -116,7 +116,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               </div>
 
               <p className="font-body text-xs text-zinc-400 font-light leading-relaxed">
-                Your screen-printed piece is queued for hand-pulling at the Free Rose Atelier. Each creation is packed in an archival matte black box with a fresh-pressed scented flower card.
+                Your screen-printed piece is queued for hand-pulling at Free Rose Apparel. Each creation is packed in an archival matte black box with a fresh-pressed scented flower card.
               </p>
 
               <button
@@ -145,7 +145,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   onClick={() => { onClose(); onOpenAtelier(); }}
                   className="px-6 py-3 border border-zinc-800 text-zinc-300 text-xs font-technical uppercase tracking-widest hover:border-white hover:text-white transition-colors"
                 >
-                  Custom Screen Print Atelier
+                  Custom Screen Print Apparel
                 </button>
               </div>
             </div>
@@ -201,8 +201,9 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
                     {item.customDetails && (
                       <div className="text-[10px] font-technical text-zinc-400 bg-zinc-950 p-2 border border-zinc-800 mt-1 space-y-0.5">
-                        <span className="block text-zinc-300">Custom Inscription: "{item.customDetails.customDedicationText}"</span>
-                        <span className="block text-zinc-500">Placement: {item.customDetails.placement} [{item.customDetails.customInitials}]</span>
+                        {item.customDetails.customArtworkName && <span className="block text-zinc-300">Artwork: {item.customDetails.customArtworkName}</span>}
+                        {item.customDetails.customDedicationText && <span className="block text-zinc-300">Print text: "{item.customDetails.customDedicationText}"</span>}
+                        <span className="block text-zinc-500">Placement: {item.customDetails.placement}</span>
                       </div>
                     )}
 
@@ -315,10 +316,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 className="w-full bg-white hover:bg-zinc-200 text-black py-4 px-6 text-xs font-semibold tracking-[0.25em] uppercase flex items-center justify-center gap-2 transition-colors disabled:opacity-50"
               >
                 {isCheckingOut ? (
-                  <span>Reserving Atelier Capacity...</span>
+                  <span>Reserving Your Custom Piece...</span>
                 ) : (
                   <>
-                    <span>Confirm Atelier Acquisition</span>
+                    <span>Confirm Your Order</span>
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}

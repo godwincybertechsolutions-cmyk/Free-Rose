@@ -25,7 +25,7 @@ export const SizingPage: React.FC = () => {
       <div className="space-y-4 max-w-3xl">
         <div className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-zinc-500 font-technical">
           <Ruler className="w-3.5 h-3.5 text-zinc-400" />
-          <span>Atelier Proportion Guidelines</span>
+          <span>Apparel Proportion Guidelines</span>
           <span aria-hidden="true" className="text-zinc-700">·</span>
           <span>Small to Extra Large</span>
         </div>
@@ -162,7 +162,7 @@ export const SizingPage: React.FC = () => {
       <div className="p-8 bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="space-y-1">
           <span className="font-editorial text-2xl text-white block">Need Custom Tailoring Advice?</span>
-          <span className="text-xs text-zinc-400 font-light">Our Nairobi atelier tailors can accommodate bespoke proportion requests on 1-of-1 commissions.</span>
+          <span className="text-xs text-zinc-400 font-light">Our Nairobi apparel team can accommodate custom proportion requests for one-of-a-kind pieces.</span>
         </div>
         <button
           onClick={() => navigateTo('atelier')}

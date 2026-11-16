@@ -91,8 +91,8 @@ function MainApp() {
     const newItem: CartItem = {
       id: `custom-${Date.now()}`,
       productId: 'custom-bespoke',
-      productName: `Bespoke Screen Print ${config.garmentType}`,
-      collectionName: 'Custom Bespoke Collection',
+      productName: `Custom ${config.garmentType}`,
+      collectionName: 'Custom Apparel Collection',
       categoryName: config.garmentType,
       gender: config.gender,
       size: config.size,
@@ -102,12 +102,12 @@ function MainApp() {
       inkFinish: config.inkFinish,
       isCustom: true,
       customDetails: config,
-      giftCardMessage: `Custom Dedication: "${config.customDedicationText}" [${config.customInitials}]`
+      giftCardMessage: config.customDedicationText ? `Custom print text: "${config.customDedicationText}"` : undefined
     };
 
     setCartItems((prev) => [newItem, ...prev]);
     setIsCartOpen(true);
-    showToast(`Bespoke 1-of-1 ${config.garmentType} added to your Bag.`);
+    showToast(`Custom ${config.garmentType} added to your Bag.`);
   };
 
   const handleUpdateQuantity = (id: string, delta: number) => {

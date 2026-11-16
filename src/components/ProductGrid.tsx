@@ -61,7 +61,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
         {/* Section Header */}
         <div className="space-y-4 max-w-3xl">
           <div className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-zinc-500 font-technical">
-            <span>Free Rose Atelier</span>
+            <span>Free Rose Apparel</span>
             <span aria-hidden="true" className="text-zinc-700">·</span>
             <span>{COLLECTIONS_DATA.length} Curated Collections</span>
           </div>
@@ -142,7 +142,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
                 onClick={onOpenAtelier}
                 className="self-start md:self-center shrink-0 px-5 py-2.5 bg-white text-black text-xs font-semibold uppercase tracking-widest hover:bg-zinc-200 transition-colors"
               >
-                Open Atelier Configurator
+                Open Apparel Configurator
               </button>
             )}
           </div>
@@ -241,7 +241,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
           <div className="py-20 text-center border border-dashed border-zinc-800 p-8 space-y-4">
             <h3 className="font-editorial text-2xl text-white">No creations match this selection</h3>
             <p className="text-zinc-400 text-sm max-w-md mx-auto font-light">
-              Try adjusting the gender, garment category, or size filter, or commission a bespoke 1-of-1 piece in our atelier.
+              Try adjusting the gender, garment category, or size filter, or commission a Custom Piece in our Apparel studio.
             </p>
             <button
               onClick={resetFilters}

@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             style={{ filter: 'invert(1) brightness(2)' }}
           />
           <span className="hidden sm:inline-block text-[10px] tracking-[0.3em] uppercase text-zinc-500 font-technical border-l border-zinc-800 pl-3">
-            Atelier
+            Apparel
           </span>
         </button>
 
@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             }`}
           >
             <Sparkles className="w-3 h-3 text-zinc-400" />
-            <span>Custom Atelier</span>
+            <span>Custom Apparel</span>
           </button>
 
           <button
@@ -107,7 +107,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           onClick={() => navigateTo('atelier')}
           className={currentPage === 'atelier' ? 'text-white font-bold' : ''}
         >
-          Atelier
+            Apparel
+
         </button>
         <button 
           onClick={() => navigateTo('lookbook')}

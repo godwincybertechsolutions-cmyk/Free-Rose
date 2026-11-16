@@ -29,18 +29,12 @@ export const Footer: React.FC = () => {
             
             {/* Left: Society Editorial Invitation */}
             <div className="lg:col-span-6 space-y-3">
-              <div className="flex items-center gap-2 text-[10px] font-technical tracking-[0.35em] uppercase text-zinc-500">
-                <span>The Inner Circle</span>
-                <span aria-hidden="true" className="text-zinc-700">·</span>
-                <span>Private Salon Access</span>
-              </div>
-
               <h3 className="font-editorial text-3xl sm:text-4xl text-white font-normal text-balance">
                 Join the Free Rose Society
               </h3>
 
               <p className="font-body text-xs sm:text-sm text-zinc-400 font-light leading-relaxed max-w-lg">
-                Receive confidential private invitations to hand-pulled limited screen print drops, archival canvas vernissages, and atelier salon previews. Dedicated to those who give people their flowers.
+                Receive confidential private invitations to hand-pulled limited drops, archival canvas vernissages, and previews.
               </p>
             </div>
 
@@ -71,10 +65,6 @@ export const Footer: React.FC = () => {
                     </button>
                   </div>
 
-                  <div className="flex items-center justify-between text-[10px] font-technical text-zinc-500 uppercase tracking-widest px-1">
-                    <span>Confidential Atelier Invitations</span>
-                    <span>Zero Spam · Unsubscribe Anytime</span>
-                  </div>
                 </form>
               )}
             </div>
@@ -106,7 +96,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="font-body text-xs sm:text-sm text-zinc-400 font-light leading-relaxed max-w-sm">
-              Luxury  print apparel and archival gallery art inspired by giving people their roses. Crafted in Nairobi using discharge inks, 3D puff formulations, and heavyweight Material.
+              Luxury print apparel and archival gallery art inspired to inspire others by giving them their flowers. Crafted in Nairobi using discharge inks, 3D puff formulations, and heavyweight Material.
             </p>
 
             <div className="pt-2 flex items-center gap-2 text-xs font-technical text-zinc-500 uppercase tracking-widest">
@@ -141,16 +131,16 @@ export const Footer: React.FC = () => {
                   onClick={() => navigateTo('atelier')}
                   className="text-white hover:text-zinc-300 transition-colors uppercase tracking-wider font-semibold text-left"
                 >
-                  Bespoke Custom Atelier Piece
+                  Custom Piece
                 </button>
               </li>
             </ul>
           </div>
 
-          {/* Maison & Ateliers Column */}
+          {/* Maison & Apparel Column */}
           <div className="lg:col-span-3 space-y-4">
             <span className="font-technical text-xs tracking-widest uppercase text-zinc-400 block">
-              Maison &amp; Atelier
+              Maison &amp; Apparel
             </span>
             <ul className="space-y-2 text-xs font-technical text-zinc-400">
               <li>
@@ -166,7 +156,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigateTo('atelier')}
                   className="hover:text-white transition-colors uppercase tracking-wider text-left"
                 >
-                  1-of-1 Atelier Commission
+                  1-of-1 Apparel Commission
                 </button>
               </li>
               <li>
@@ -185,13 +175,11 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-technical text-zinc-400">
           <div className="flex items-center gap-2">
-            <span>© 2026 FREE ROSE ATELIER.</span>
+            <span>© 2026 FREE ROSE.</span>
             <span>ALL RIGHTS RESERVED.</span>
           </div>
 
-          <div className="flex items-center gap-1.5 text-zinc-300">
-            <span>In Eternal Dedication to Rose</span>
-            <Heart className="w-3.5 h-3.5 text-zinc-400" />
+          <div className="flex items-center text-zinc-300">
             <span>"You Deserve Your Flowers"</span>
           </div>
         </div>
