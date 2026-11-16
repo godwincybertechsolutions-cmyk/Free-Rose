@@ -53,7 +53,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   onClick={() => navigateTo('collections')}
                   className="inline-flex items-center justify-center gap-3 bg-white text-black hover:bg-zinc-200 transition-colors px-6 py-4 text-xs font-semibold tracking-[0.2em] uppercase focus:outline-none focus:ring-1 focus:ring-white"
                 >
-                  <span>Explore The 6 Collections</span>
+                  <span>Explore {COLLECTIONS_DATA.length} Collections</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
 
@@ -124,7 +124,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               Curated Universes
             </span>
             <h2 className="font-editorial text-3xl sm:text-4xl text-white font-normal">
-              Explore The Six Collections
+              Explore All {COLLECTIONS_DATA.length} Collections
             </h2>
           </div>
           <button

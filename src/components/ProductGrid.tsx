@@ -63,7 +63,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
           <div className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-zinc-500 font-technical">
             <span>Free Rose Atelier</span>
             <span aria-hidden="true" className="text-zinc-700">·</span>
-            <span>Six Core Collections</span>
+            <span>{COLLECTIONS_DATA.length} Curated Collections</span>
           </div>
 
           <h2 className="font-editorial text-4xl sm:text-5xl text-white font-normal text-balance">
@@ -91,7 +91,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
           </div>
 
           {/* Clean Segmented Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-2">
             <button
               onClick={() => setSelectedCollection('all')}
               className={`py-3 px-3 text-xs tracking-wider uppercase text-left sm:text-center border transition-all ${

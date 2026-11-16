@@ -4,7 +4,13 @@ export type CollectionId =
   | 'mashujaa'
   | 'kenyan-culture'
   | 'creative-art'
-  | 'athletes';
+  | 'athletes'
+  | 'denim-tears'
+  | 'off-white'
+  | 'chrome-hearts'
+  | 'hba'
+  | 'lv'
+  | 'ralph-lauren';
 
 export type CategoryId = 
   | 'canvas-paintings'

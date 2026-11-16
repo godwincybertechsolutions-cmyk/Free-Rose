@@ -71,7 +71,7 @@ export const CollectionDetailPage: React.FC<CollectionDetailPageProps> = ({
           className="flex items-center gap-1.5 text-zinc-400 hover:text-white transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
-          <span>All 6 Collections</span>
+          <span>All {COLLECTIONS_DATA.length} Collections</span>
         </button>
       </div>
 
@@ -215,7 +215,7 @@ export const CollectionDetailPage: React.FC<CollectionDetailPageProps> = ({
         <h3 className="font-editorial text-2xl text-white">
           Other Free Rose Collections
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3">
           {COLLECTIONS_DATA.filter(c => c.id !== collection.id).map((other) => (
             <button
               key={other.id}

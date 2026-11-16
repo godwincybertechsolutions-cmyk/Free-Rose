@@ -48,6 +48,48 @@ export const COLLECTIONS_DATA = [
     tagline: '1-of-1 Tailored Screen Print Atelier',
     description: 'Bespoke customization suite. Select garment, ink depth (3D puff, discharge ink, foil shimmer), flower placement, and personalize a dedication to your own hero.',
     featuredTag: 'Bespoke Studio'
+  },
+  {
+    id: 'denim-tears',
+    name: 'Free Rose X Denim Tears',
+    tagline: 'A shared language of identity and heritage',
+    description: 'A collaborative collection bringing Free Rose’s floral tributes together with considered expressions of culture, identity, and heritage.',
+    featuredTag: 'Collaborative Edition'
+  },
+  {
+    id: 'off-white',
+    name: 'Free Rose X Off-White',
+    tagline: 'Streetwear codes, reimagined in bloom',
+    description: 'A meeting of contemporary streetwear and the Free Rose signature, expressed through bold graphics and distinctive details.',
+    featuredTag: 'Collaborative Edition'
+  },
+  {
+    id: 'chrome-hearts',
+    name: 'Free Rose X Chrome Hearts',
+    tagline: 'Gothic craft meets the rose',
+    description: 'An expressive collaboration pairing the Free Rose botanical emblem with a dark, handcrafted luxury sensibility.',
+    featuredTag: 'Collaborative Edition'
+  },
+  {
+    id: 'hba',
+    name: 'Free Rose X HBA',
+    tagline: 'Provocative energy, personal meaning',
+    description: 'A boundary-pushing collaboration shaped by bold streetwear language and the Free Rose story of honoring those we love.',
+    featuredTag: 'Collaborative Edition'
+  },
+  {
+    id: 'lv',
+    name: 'Free Rose X LV',
+    tagline: 'A timeless house code, in full bloom',
+    description: 'A considered take on luxury, bringing the Free Rose floral identity into a refined collaborative collection.',
+    featuredTag: 'Collaborative Edition'
+  },
+  {
+    id: 'ralph-lauren',
+    name: 'Free Rose X Ralph Lauren',
+    tagline: 'American heritage with a Free Rose spirit',
+    description: 'Classic heritage silhouettes meet the Free Rose dedication to family, memory, and enduring personal style.',
+    featuredTag: 'Collaborative Edition'
   }
 ] as const;
 

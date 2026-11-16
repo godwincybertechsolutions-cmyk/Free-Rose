@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigation } from '../context/NavigationContext';
 import { Heart, ArrowRight, Check } from 'lucide-react';
+import { COLLECTIONS_DATA } from '../data/products';
 import freeRoseLogo from '../Public/assets/Logo/Free Rose — Concept A_ Unbound wordmark-Photoroom.png';
 
 export const Footer: React.FC = () => {
@@ -122,49 +123,19 @@ export const Footer: React.FC = () => {
           {/* 6 Collections Column */}
           <div className="lg:col-span-4 space-y-4">
             <span className="font-technical text-xs tracking-widest uppercase text-zinc-400 block">
-              The Six Collections
+              All Collections
             </span>
             <ul className="space-y-2 text-xs font-technical text-zinc-400">
-              <li>
-                <button 
-                  onClick={() => navigateTo('collection-detail', 'wanisa')}
-                  className="hover:text-white transition-colors uppercase tracking-wider text-left"
-                >
-                  Wanisa Collection (Rose Homage)
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => navigateTo('collection-detail', 'mashujaa')}
-                  className="hover:text-white transition-colors uppercase tracking-wider text-left"
-                >
-                  Mashujaa Collection (Heroes)
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => navigateTo('collection-detail', 'kenyan-culture')}
-                  className="hover:text-white transition-colors uppercase tracking-wider text-left"
-                >
-                  Kenyan Culture Collection
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => navigateTo('collection-detail', 'creative-art')}
-                  className="hover:text-white transition-colors uppercase tracking-wider text-left"
-                >
-                  Creative Art Collection (Canvas Paintings)
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => navigateTo('collection-detail', 'athletes')}
-                  className="hover:text-white transition-colors uppercase tracking-wider text-left"
-                >
-                  Athletes &amp; Ballers Collection
-                </button>
-              </li>
+              {COLLECTIONS_DATA.map((collection) => (
+                <li key={collection.id}>
+                  <button
+                    onClick={() => navigateTo('collection-detail', collection.id)}
+                    className="hover:text-white transition-colors uppercase tracking-wider text-left"
+                  >
+                    {collection.name}
+                  </button>
+                </li>
+              ))}
               <li>
                 <button 
                   onClick={() => navigateTo('atelier')}
