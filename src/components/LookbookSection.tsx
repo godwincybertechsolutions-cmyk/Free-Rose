@@ -62,7 +62,7 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({ onExploreColle
                 <span className="font-editorial text-2xl text-white">Botanical Rose Heavy Tee &amp; Raw Denim Trouser</span>
               </div>
               <span className="font-technical text-xs text-zinc-400 uppercase tracking-widest hidden sm:inline">
-                Atelier 320 GSM
+                Apparel 320 GSM
               </span>
             </div>
           </div>

@@ -14,10 +14,10 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
   const [garmentType, setGarmentType] = useState<CustomScreenPrintConfig['garmentType']>('Heavyweight Luxury Tee');
   const [garmentColor, setGarmentColor] = useState<'Obsidian Black' | 'Chalk White'>('Obsidian Black');
   const [placement, setPlacement] = useState<CustomScreenPrintConfig['placement']>('Oversized Back Center');
-  const [roseMotif, setRoseMotif] = useState<CustomScreenPrintConfig['roseMotif']>('Signature Blooming Rose');
+  const [customArtworkName, setCustomArtworkName] = useState('');
+  const [customArtworkDataUrl, setCustomArtworkDataUrl] = useState<string>();
   const [inkFinish, setInkFinish] = useState<InkFinish>('High-Density 3D Puff Print');
-  const [customDedicationText, setCustomDedicationText] = useState('FOR ROSE · YOU DESERVE YOUR FLOWERS');
-  const [customInitials, setCustomInitials] = useState('R.M.');
+  const [customDedicationText, setCustomDedicationText] = useState('');
   const [size, setSize] = useState<ApparelSize>('L');
   const [gender, setGender] = useState<GenderType>('unisex');
   const [isSuccessFeedback, setIsSuccessFeedback] = useState(false);
@@ -39,10 +39,10 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
       garmentType,
       garmentColor,
       placement,
-      roseMotif,
+      customArtworkName,
+      customArtworkDataUrl,
       inkFinish,
-      customDedicationText: customDedicationText.trim() || 'YOU DESERVE YOUR FLOWERS',
-      customInitials: customInitials.trim().toUpperCase() || 'FR',
+      customDedicationText: customDedicationText.trim(),
       size,
       gender,
     });
@@ -59,9 +59,9 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="flex items-center justify-center gap-2 text-xs tracking-[0.3em] uppercase text-zinc-400 font-technical">
             <Sparkles className="w-3.5 h-3.5 text-zinc-300" />
-            <span>Screen Print Atelier</span>
+            <span>Screen Print Apparel</span>
             <span aria-hidden="true" className="text-zinc-600">·</span>
-            <span>Bespoke 1-of-1 Commission</span>
+            <span>Custom Piece</span>
           </div>
 
           <h2 className="font-editorial text-4xl sm:text-5xl lg:text-6xl text-white font-normal text-balance">
@@ -69,11 +69,11 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
           </h2>
 
           <p className="font-body text-sm sm:text-base text-zinc-400 font-light leading-relaxed">
-            Every garment tells a story of gratitude. Personalize your silkscreen finish, botanical rose artwork, and dedicated inscription to honor your mother, mentor, or hero.
+            Make the garment your canvas. Upload any design you want, choose its placement and print finish, and personalize the details.
           </p>
         </div>
 
-        {/* 2-Column Atelier Configurator */}
+        {/* 2-Column Custom Apparel Configurator */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           
           {/* Left Column: Live Screen Print Garment Visualizer */}
@@ -122,61 +122,29 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
                   'inset-0 scale-100' // Oversized Back Center
                 }`}>
                   
-                  {/* Brand Monogram */}
-                  <span className={`font-technical text-[10px] tracking-[0.4em] uppercase mb-1 transition-colors ${
-                    garmentColor === 'Obsidian Black' ? 'text-zinc-400' : 'text-zinc-600'
-                  }`}>
-                    FREE ROSE · ATELIER [{customInitials}]
-                  </span>
-
-                  {/* Silkscreen Rose Artwork Render */}
+                  {/* Custom artwork preview */}
                   <div className={`relative my-2 transition-transform duration-300 ${
                     inkFinish === 'High-Density 3D Puff Print' ? 'scale-105 screen-print-puff' :
                     inkFinish === 'Vintage Distressed Crackle' ? 'opacity-85 screen-print-crackle' :
                     inkFinish === 'Silversmith Foil Shimmer' ? 'brightness-125' :
                     'screen-print-discharge'
                   }`}>
-                    {roseMotif === 'Signature Blooming Rose' ? (
-                      // Botanical Rose Vector
-                      <svg viewBox="0 0 100 100" className={`w-32 h-32 ${garmentColor === 'Obsidian Black' ? 'stroke-white fill-none' : 'stroke-black fill-none'}`} strokeWidth="1.5">
-                        <path d="M 50 20 C 40 20 30 30 35 45 C 40 55 50 65 50 70 C 50 65 60 55 65 45 C 70 30 60 20 50 20 Z" />
-                        <path d="M 45 35 C 40 38 42 48 50 50 C 58 48 60 38 55 35 C 50 30 46 32 45 35 Z" />
-                        <circle cx="50" cy="40" r="5" />
-                        <path d="M 50 70 L 50 90 M 45 78 L 38 74 M 55 84 L 62 80" strokeLinecap="round" />
-                        <circle cx="50" cy="38" r="14" strokeDasharray="3 2" />
-                      </svg>
-                    ) : roseMotif === 'Rose Stem & Thorns' ? (
-                      // Stem & Thorns Vector
-                      <svg viewBox="0 0 100 100" className={`w-32 h-32 ${garmentColor === 'Obsidian Black' ? 'stroke-white fill-none' : 'stroke-black fill-none'}`} strokeWidth="1.5">
-                        <path d="M 50 15 L 50 85 M 50 35 L 35 30 M 50 50 L 65 45 M 50 65 L 38 68" strokeLinecap="round" />
-                        <circle cx="50" cy="20" r="8" />
-                        <path d="M 42 20 Q 50 10 58 20" />
-                      </svg>
-                    ) : roseMotif === 'Geometric Kenyan Rose' ? (
-                      // Geometric Diamond Lattice Rose
-                      <svg viewBox="0 0 100 100" className={`w-32 h-32 ${garmentColor === 'Obsidian Black' ? 'stroke-white fill-none' : 'stroke-black fill-none'}`} strokeWidth="1.5">
-                        <polygon points="50,15 80,50 50,85 20,50" />
-                        <polygon points="50,28 68,50 50,72 32,50" />
-                        <circle cx="50" cy="50" r="6" />
-                        <line x1="50" y1="15" x2="50" y2="85" strokeDasharray="2 2" />
-                        <line x1="20" y1="50" x2="80" y2="50" strokeDasharray="2 2" />
-                      </svg>
+                    {customArtworkDataUrl ? (
+                      <img src={customArtworkDataUrl} alt={`Preview of ${customArtworkName}`} className="w-32 h-32 object-contain mix-blend-screen" />
                     ) : (
-                      // Abstract Painterly Rose
-                      <svg viewBox="0 0 100 100" className={`w-32 h-32 ${garmentColor === 'Obsidian Black' ? 'stroke-white fill-none' : 'stroke-black fill-none'}`} strokeWidth="2">
-                        <path d="M 30 40 Q 50 10 70 35 Q 85 60 55 75 Q 25 80 25 55 Q 25 30 50 30" strokeDasharray="6 3" />
-                        <path d="M 40 45 Q 50 35 60 48 Q 55 60 45 58" />
-                        <line x1="50" y1="75" x2="50" y2="92" strokeWidth="3" />
-                      </svg>
+                      <div className={`w-32 h-32 border border-dashed flex items-center justify-center px-3 text-[10px] font-technical uppercase tracking-widest ${garmentColor === 'Obsidian Black' ? 'border-zinc-500 text-zinc-400' : 'border-zinc-500 text-zinc-600'}`}>
+                        Upload artwork to preview it here
+                      </div>
                     )}
                   </div>
 
-                  {/* Custom Dedication Typography */}
-                  <span className={`font-editorial tracking-[0.2em] uppercase text-xs font-semibold max-w-[200px] leading-tight ${
-                    garmentColor === 'Obsidian Black' ? 'text-white' : 'text-black'
-                  }`}>
-                    {customDedicationText}
-                  </span>
+                  {customDedicationText && (
+                    <span className={`font-editorial tracking-[0.2em] uppercase text-xs font-semibold max-w-[200px] leading-tight ${
+                      garmentColor === 'Obsidian Black' ? 'text-white' : 'text-black'
+                    }`}>
+                      {customDedicationText}
+                    </span>
+                  )}
 
                   {/* Silkscreen Technical Badge */}
                   <span className={`font-technical text-[9px] tracking-widest uppercase mt-2 opacity-60 ${
@@ -281,31 +249,34 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
               </div>
             </div>
 
-            {/* Step 4: Botanical Rose Motif */}
+            {/* Step 4: Custom Artwork */}
             <div className="space-y-3">
-              <label className="block font-technical text-xs tracking-widest text-zinc-400 uppercase">
-                04. Botanical Rose Emblem
+              <label htmlFor="custom-artwork" className="block font-technical text-xs tracking-widest text-zinc-400 uppercase">
+                04. Add Your Own Design
               </label>
-              <div className="grid grid-cols-2 gap-2">
-                {[
-                  'Signature Blooming Rose',
-                  'Rose Stem & Thorns',
-                  'Geometric Kenyan Rose',
-                  'Abstract Painterly Rose',
-                ].map((motif) => (
-                  <button
-                    key={motif}
-                    onClick={() => setRoseMotif(motif as any)}
-                    className={`py-2 px-3 text-xs tracking-wider text-left border transition-all ${
-                      roseMotif === motif
-                        ? 'border-white bg-white text-black font-semibold'
-                        : 'border-zinc-800 bg-zinc-900/50 text-zinc-400 hover:text-white'
-                    }`}
-                  >
-                    {motif}
-                  </button>
-                ))}
-              </div>
+              <p className="text-xs text-zinc-500">Upload any image or artwork to preview it on your garment. PNG, JPG, WebP, or GIF up to 5 MB.</p>
+              <input
+                id="custom-artwork"
+                type="file"
+                accept="image/png,image/jpeg,image/webp,image/gif"
+                onChange={(event) => {
+                  const file = event.currentTarget.files?.[0];
+                  if (!file) return;
+                  if (file.size > 5 * 1024 * 1024) {
+                    event.currentTarget.value = '';
+                    return;
+                  }
+                  const reader = new FileReader();
+                  reader.onload = () => {
+                    if (typeof reader.result === 'string') {
+                      setCustomArtworkDataUrl(reader.result);
+                      setCustomArtworkName(file.name);
+                    }
+                  };
+                  reader.readAsDataURL(file);
+                }}
+                className="block w-full text-xs text-zinc-300 file:mr-4 file:border file:border-zinc-700 file:bg-zinc-900 file:px-4 file:py-2.5 file:text-xs file:tracking-wider file:text-white hover:file:border-zinc-500"
+              />
             </div>
 
             {/* Step 5: Screen Print Ink Chemistry */}
@@ -343,36 +314,22 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
             <div className="space-y-4 pt-2">
               <div>
                 <label className="block font-technical text-xs tracking-widest text-zinc-400 uppercase mb-1.5">
-                  06. Commemorative Flower Dedication
+                  06. Optional Custom Print Text
                 </label>
                 <input
                   type="text"
                   maxLength={48}
                   value={customDedicationText}
                   onChange={(e) => setCustomDedicationText(e.target.value)}
-                  placeholder="e.g. FOR ROSE · YOU DESERVE YOUR FLOWERS"
+                  placeholder="Add text to print (optional)"
                   className="w-full bg-black border border-zinc-800 px-4 py-3 text-xs tracking-widest text-white uppercase focus:border-white focus:outline-none"
                 />
                 <span className="block text-[10px] text-zinc-500 font-technical mt-1">
-                  Screen printed in luxury serif typography directly beneath the botanical blossom.
+                  Optional text will be printed alongside your uploaded design.
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block font-technical text-xs tracking-widest text-zinc-400 uppercase mb-1.5">
-                    Client Monogram
-                  </label>
-                  <input
-                    type="text"
-                    maxLength={4}
-                    value={customInitials}
-                    onChange={(e) => setCustomInitials(e.target.value.toUpperCase())}
-                    placeholder="e.g. R.M."
-                    className="w-full bg-black border border-zinc-800 px-4 py-2.5 text-xs tracking-widest text-white uppercase focus:border-white focus:outline-none"
-                  />
-                </div>
-                
+              <div className="grid grid-cols-1 gap-4">
                 <div>
                   <div className="flex items-center justify-between mb-1.5">
                     <label className="font-technical text-xs tracking-widest text-zinc-400 uppercase">
@@ -432,7 +389,7 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
               <div className="flex items-baseline justify-between">
                 <div>
                   <span className="font-technical text-xs uppercase tracking-widest text-zinc-400 block">
-                    Bespoke Atelier Commission
+                    Custom Apparel Commission
                   </span>
                   <span className="font-editorial text-2xl text-white">
                     1-of-1 Tailored Screen Print
@@ -443,7 +400,7 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
                     ${getBasePrice()}
                   </span>
                   <span className="block text-[11px] font-technical text-zinc-500 uppercase">
-                    Free Atelier Delivery
+                    Free Apparel Delivery
                   </span>
                 </div>
               </div>
@@ -471,7 +428,7 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
                   Archival Screen Burn
                 </span>
                 <span>·</span>
-                <span>Crafted in 4-6 Atelier Days</span>
+                <span>Crafted in 4-6 Days</span>
                 <span>·</span>
                 <span>Rose Dedicated Box Included</span>
               </div>

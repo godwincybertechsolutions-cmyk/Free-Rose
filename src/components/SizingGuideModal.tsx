@@ -32,7 +32,7 @@ export const SizingGuideModal: React.FC<SizingGuideModalProps> = ({ isOpen, onCl
         <div className="space-y-2 mb-6">
           <div className="flex items-center gap-2 text-xs font-technical tracking-[0.25em] uppercase text-zinc-500">
             <Ruler className="w-3.5 h-3.5 text-zinc-400" />
-            <span>Atelier Sizing &amp; Fit Specifications</span>
+            <span>Apparel Sizing &amp; Fit Specifications</span>
           </div>
 
           <h2 className="font-editorial text-3xl text-white font-normal">

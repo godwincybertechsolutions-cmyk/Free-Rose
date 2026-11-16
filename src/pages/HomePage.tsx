@@ -61,7 +61,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   onClick={() => navigateTo('atelier')}
                   className="inline-flex items-center justify-center gap-2.5 bg-zinc-950 text-white hover:bg-zinc-900 border border-zinc-700 hover:border-zinc-500 transition-colors px-6 py-4 text-xs font-medium tracking-[0.2em] uppercase"
                 >
-                  <span>Custom Atelier</span>
+                  <span>Custom Apparel</span>
                 </button>
               </div>
 
@@ -99,7 +99,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                       Campaign AW26
                     </span>
                     <span className="font-editorial text-lg tracking-wide text-white">
-                      Homage to Rose · The Botanical Silk Screen
+                      Homage to Rose
                     </span>
                   </div>
                   <button
@@ -192,7 +192,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-zinc-900 pb-6">
           <div className="space-y-2">
             <span className="text-xs font-technical tracking-[0.3em] uppercase text-zinc-500 block">
-              Atelier Highlights
+              Apparel Highlights
             </span>
             <h2 className="font-editorial text-3xl sm:text-4xl text-white font-normal">
               Signature Editions
@@ -219,7 +219,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
-      {/* 4. Atelier Studio Invitation Banner */}
+      {/* 4. Custom Apparel Invitation Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative p-8 sm:p-14 bg-zinc-950 border border-zinc-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-8 space-y-4">
@@ -228,7 +228,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <span>1-of-1 Service</span>
             </div>
             <h3 className="font-editorial text-3xl sm:text-5xl text-white font-normal text-balance">
-              The Free Rose Print Atelier
+              Create Your Custom Apparel
             </h3>
           </div>
           <div className="lg:col-span-4 flex flex-col gap-3 justify-center">
@@ -236,7 +236,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               onClick={() => navigateTo('atelier')}
               className="w-full py-4 px-6 bg-white text-black font-semibold uppercase tracking-[0.2em] text-xs hover:bg-zinc-200 transition-colors text-center"
             >
-              Open Atelier Configurator
+              Open Apparel Configurator
             </button>
             <button
               onClick={() => navigateTo('sizing')}
@@ -248,40 +248,6 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
-      {/* 5. The Rose Homage Teaser */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center border border-zinc-900 bg-black p-8 sm:p-12">
-          <div className="md:col-span-4 aspect-[4/3] bg-zinc-900 border border-zinc-800 overflow-hidden">
-            <img
-              src={PRODUCT_CANVAS_ART}
-              alt="You Deserve Your Flowers Canvas"
-              referrerPolicy="no-referrer"
-              className="w-full h-full object-cover grayscale contrast-115"
-            />
-          </div>
-          <div className="md:col-span-8 space-y-4">
-            <div className="flex items-center gap-2 text-xs font-technical tracking-widest text-zinc-500 uppercase">
-              <Heart className="w-3.5 h-3.5 text-zinc-400" />
-              <span>The Founder's Dedication</span>
-            </div>
-            <h3 className="font-editorial text-2xl sm:text-4xl text-white">
-              "Everybody deserves their flowers while they can still smell them."
-            </h3>
-            <p className="font-body text-xs sm:text-sm text-zinc-400 font-light leading-relaxed">
-              Named in honoring homage to Rose, the founder's mother. Free Rose was established to turn floral gratitude into an enduring, wearable art form.
-            </p>
-            <div className="pt-2">
-              <button
-                onClick={() => navigateTo('atelier')}
-                className="text-xs font-technical uppercase tracking-widest text-white hover:text-zinc-300 underline underline-offset-4 flex items-center gap-2"
-              >
-                <span>Commission Bespoke Atelier Piece</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
 
     </div>
   );

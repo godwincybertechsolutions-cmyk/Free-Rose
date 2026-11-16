@@ -19,7 +19,7 @@ export const AtelierPage: React.FC<AtelierPageProps> = ({ onAddCustomToCart }) =
             Home
           </button>
           <span aria-hidden="true">/</span>
-          <span className="text-zinc-300">Bespoke Screen Print Atelier</span>
+          <span className="text-zinc-300">Custom Screen Print Apparel</span>
         </div>
       </div>
 

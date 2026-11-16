@@ -242,7 +242,7 @@ export const CollectionsPage: React.FC<CollectionsPageProps> = ({
         <div className="py-20 text-center border border-dashed border-zinc-800 p-8 space-y-4">
           <h3 className="font-editorial text-2xl text-white">No creations match this selection</h3>
           <p className="text-zinc-400 text-sm max-w-md mx-auto font-light">
-            Try adjusting the gender, garment category, or size filter, or commission a bespoke 1-of-1 piece in our atelier.
+            Try adjusting the gender, garment category, or size filter, or commission a Custom Piece in our Apparel studio.
           </p>
           <button
             onClick={resetFilters}
