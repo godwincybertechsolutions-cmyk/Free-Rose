@@ -27,11 +27,11 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({ onExploreColle
             </div>
 
             <h2 className="font-editorial text-4xl sm:text-5xl text-white font-normal text-balance">
-              The Monochrome Campaign: Flowers in Concrete
+              The Monochrome Campaign
             </h2>
 
             <p className="font-body text-sm text-zinc-400 font-light leading-relaxed">
-              Photographed inside brutalist architectural spaces. The collection bridges high-density screen printing with structured raw denim, relaxed tailoring, and archival cotton canvas.
+              The collection bridges high quality prints with structured raw denim, relaxed tailoring, and archival cotton canvas.
             </p>
           </div>
 
@@ -117,20 +117,13 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({ onExploreColle
           <div className="md:col-span-7 space-y-4">
             <div className="flex items-center gap-2 text-xs font-technical tracking-widest text-zinc-500 uppercase">
               <span>Fine Art Series</span>
-              <span>·</span>
-              <span>480 GSM Cotton Canvas</span>
             </div>
             <h3 className="font-editorial text-3xl text-white">
-              Wearable Apparel &amp; Gallery Paintings
+              Gallery Paintings
             </h3>
             <p className="font-body text-xs sm:text-sm text-zinc-400 font-light leading-relaxed">
-              In addition to our wearable denim and jersey collections, the Free Rose Creative Art series includes hand-stretched museum-grade canvas paintings. Silkscreened in limited editions of 50, each artwork cements the brand's core truth: <em>"You deserve your flowers."</em>
+              In addition to our wearable collections, the Free Rose Creative Art series includes hand-stretched museum-grade canvas paintings.
             </p>
-            <div className="pt-2">
-              <span className="text-[11px] font-technical uppercase tracking-wider text-zinc-300 block">
-                Standard Dimensions: 36 x 48 inches (Stretched on 1.5" Pine)
-              </span>
-            </div>
           </div>
         </div>
 

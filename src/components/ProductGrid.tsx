@@ -70,9 +70,6 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
             The Apparel &amp; Canvas Catalogue
           </h2>
 
-          <p className="font-body text-sm text-zinc-400 font-light leading-relaxed">
-            Screen-printed with artisanal precision. Tailored in raw denim, double-layer athletic mesh, 320 GSM combed organic cotton, and archival fine-art unbleached canvas.
-          </p>
         </div>
 
         {/* 6 Collections Segmented Navigation Bar */}

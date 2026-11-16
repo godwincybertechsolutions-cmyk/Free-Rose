@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CustomScreenPrintConfig, ApparelSize, GenderType, InkFinish } from '../types/brand';
-import { Sparkles, Check, Info, ArrowRight, ShieldCheck, RefreshCw } from 'lucide-react';
+import { Check, Info, ArrowRight, RefreshCw } from 'lucide-react';
 
 interface ScreenPrintAtelierProps {
   onAddCustomToCart: (config: CustomScreenPrintConfig) => void;
@@ -57,15 +57,8 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="flex items-center justify-center gap-2 text-xs tracking-[0.3em] uppercase text-zinc-400 font-technical">
-            <Sparkles className="w-3.5 h-3.5 text-zinc-300" />
-            <span>Screen Print Apparel</span>
-            <span aria-hidden="true" className="text-zinc-600">·</span>
-            <span>Custom Piece</span>
-          </div>
-
           <h2 className="font-editorial text-4xl sm:text-5xl lg:text-6xl text-white font-normal text-balance">
-            Craft Your Custom Screen Print
+            Craft Your Custom Apparel
           </h2>
 
           <p className="font-body text-sm sm:text-base text-zinc-400 font-light leading-relaxed">
@@ -279,37 +272,6 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
               />
             </div>
 
-            {/* Step 5: Screen Print Ink Chemistry */}
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <label className="font-technical text-xs tracking-widest text-zinc-400 uppercase">
-                  05. Silkscreen Ink Chemistry
-                </label>
-                <span className="text-[11px] font-technical text-zinc-500">Hand-Pulled in Nairobi</span>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {[
-                  { id: 'High-Density 3D Puff Print', desc: 'Tactile raised emboss texture' },
-                  { id: 'Matte Water-Base Discharge', desc: 'Penetrates yarn, ultra-soft hand feel' },
-                  { id: 'Vintage Distressed Crackle', desc: 'Micro-fractured archival gallery look' },
-                  { id: 'Silversmith Foil Shimmer', desc: 'Monochrome metallic reflective highlight' },
-                ].map((ink) => (
-                  <button
-                    key={ink.id}
-                    onClick={() => setInkFinish(ink.id as any)}
-                    className={`py-2.5 px-3 text-left border transition-all ${
-                      inkFinish === ink.id
-                        ? 'border-white bg-white text-black'
-                        : 'border-zinc-800 bg-zinc-900/50 text-zinc-300 hover:border-zinc-700'
-                    }`}
-                  >
-                    <span className="block text-xs font-semibold tracking-wider">{ink.id}</span>
-                    <span className="block text-[11px] opacity-70 mt-0.5">{ink.desc}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-
             {/* Step 6: Personalized Dedication Text & Monogram */}
             <div className="space-y-4 pt-2">
               <div>
@@ -392,7 +354,7 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
                     Custom Apparel Commission
                   </span>
                   <span className="font-editorial text-2xl text-white">
-                    1-of-1 Tailored Screen Print
+                    1-of-1 Custom Piece
                   </span>
                 </div>
                 <div className="text-right">
@@ -416,22 +378,13 @@ export const ScreenPrintAtelier: React.FC<ScreenPrintAtelierProps> = ({
                   </>
                 ) : (
                   <>
-                    <span>Commission Custom Screen Print</span>
+                    <span>Commission Custom Piece</span>
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}
               </button>
 
-              <div className="flex items-center justify-center gap-6 text-[11px] font-technical tracking-wider text-zinc-500 uppercase">
-                <span className="flex items-center gap-1.5">
-                  <ShieldCheck className="w-3.5 h-3.5" />
-                  Archival Screen Burn
-                </span>
-                <span>·</span>
-                <span>Crafted in 4-6 Days</span>
-                <span>·</span>
-                <span>Rose Dedicated Box Included</span>
-              </div>
+
             </div>
 
           </div>

@@ -7,7 +7,7 @@ import {
   PRODUCT_MASHUJAA_JERSEY, 
   PRODUCT_CANVAS_ART 
 } from '../data/products';
-import { Camera, Sparkles, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight } from 'lucide-react';
 
 export const LookbookPage: React.FC = () => {
   const { navigateTo } = useNavigation();
@@ -23,24 +23,6 @@ export const LookbookPage: React.FC = () => {
           <span aria-hidden="true">/</span>
           <span className="text-zinc-300">Lookbook AW26 Campaign</span>
         </div>
-      </div>
-
-      {/* Hero statement */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-        <div className="flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-zinc-500 font-technical">
-          <Camera className="w-3.5 h-3.5 text-zinc-400" />
-          <span>Autumn / Winter Lookbook</span>
-          <span aria-hidden="true" className="text-zinc-700">·</span>
-          <span>Nairobi &amp; Global Runway</span>
-        </div>
-
-        <h1 className="font-editorial text-4xl sm:text-6xl text-white font-normal text-balance">
-          Flowers in Brutalism: The Autumn/Winter Lookbook
-        </h1>
-
-        <p className="font-body text-sm sm:text-base text-zinc-400 font-light max-w-2xl leading-relaxed">
-          Screen printed apparel captured against stark architectural concrete. Discover how raw Japanese denim, heavyweight athletic mesh, and unbleached cotton canvas coexist in an unapologetic black and white visual discipline.
-        </p>
       </div>
 
       {/* Editorial Spread Component */}
