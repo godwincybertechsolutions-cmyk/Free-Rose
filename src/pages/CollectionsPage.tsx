@@ -72,9 +72,6 @@ export const CollectionsPage: React.FC<CollectionsPageProps> = ({
           The Apparel &amp; Canvas Catalogue
         </h1>
 
-        <p className="font-body text-sm sm:text-base text-zinc-400 font-light leading-relaxed">
-          Screen-printed with artisanal precision. Tailored in raw denim, double-layer athletic mesh, 320 GSM combed organic cotton, and archival fine-art unbleached canvas across Ladies, Men, and Unisex cuts ranging from Small to Extra Large.
-        </p>
       </div>
 
       {/* 6 Collections Segmented Navigation Bar */}
