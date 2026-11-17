@@ -10,9 +10,9 @@ export const COLLECTIONS_DATA = [
   {
     id: 'wanisa',
     name: 'Wanisa Collection',
-    tagline: 'A Mother’s Grace & Unyielding Devotion',
-    description: 'Dedicated entirely to Rose. Delicate botanical rose lines printed in high-density inks, symbolizing pure maternal love, grace, and timeless matriarchal power.',
-    featuredTag: 'Maternal Homage'
+    tagline: 'Roses for Wanisa',
+    description: 'Streaming platforms are not enough, Let’s give our artists their flowers.',
+    featuredTag: 'For Wanisa'
   },
   {
     id: 'mashujaa',
