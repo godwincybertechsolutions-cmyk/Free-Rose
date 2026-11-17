@@ -17,16 +17,16 @@ export const COLLECTIONS_DATA = [
   {
     id: 'mashujaa',
     name: 'Mashujaa Collection',
-    tagline: 'The Champions & The Everyday Heroes',
+    tagline: 'Roses for Mashujaa',
     description: 'Mashujaa (Swahili for Heroes). Bold monumental serif typography, heavyweight athletic silhouettes, celebrating the unsung heroes who gave us life and paved our paths.',
-    featuredTag: 'Heroic Silhouette'
+    featuredTag: 'For Mashujaa'
   },
   {
     id: 'kenyan-culture',
     name: 'Kenyan Culture Collection',
-    tagline: 'Nairobi Haute Streetwear & Heritage',
+    tagline: 'Roses for the Kulture',
     description: 'Monochrome geometric adaptations of traditional patterns, Maasai shuka screen prints translated into high-contrast street luxury, and Swahili poetic scriptures.',
-    featuredTag: 'Heritage Haute'
+    featuredTag: 'For the Kulture'
   },
   {
     id: 'creative-art',
