@@ -51,6 +51,31 @@
   font-family: var(--font-display);
 }
 
+.hero-rose-heading {
+  color: transparent;
+  background-image: url('./assets/images/hero-rose-mask.png');
+  background-size: 115% auto;
+  background-position: center 46%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: rose-drift 16s ease-in-out infinite alternate;
+}
+
+@keyframes rose-drift {
+  from {
+    background-position: 38% 42%;
+  }
+  to {
+    background-position: 62% 58%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rose-heading {
+    animation: none;
+  }
+}
+
 h2.font-editorial,
 h3.font-editorial {
   font-family: var(--font-subheading);

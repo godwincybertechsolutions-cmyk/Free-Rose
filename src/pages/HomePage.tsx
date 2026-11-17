@@ -40,7 +40,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   <span>Monochrome Series</span>
                 </div>
 
-                <h1 className="font-editorial text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-white leading-[1.05] text-balance">
+                <h1 className="hero-rose-heading font-editorial text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight leading-[1.05] text-balance">
                   You Deserve Your Flowers.
                 </h1>
 
