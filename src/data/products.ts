@@ -10,84 +10,84 @@ export const COLLECTIONS_DATA = [
   {
     id: 'wanisa',
     name: 'Wanisa Collection',
-    tagline: 'Roses for Wanisa',
+    tagline: '',
     description: 'Streaming platforms are not enough, Let’s give our artists their flowers.',
-    featuredTag: 'For Wanisa'
+    featuredTag: ''
   },
   {
     id: 'mashujaa',
     name: 'Mashujaa Collection',
-    tagline: 'Roses for Mashujaa',
+    tagline: '',
     description: 'Mashujaa (Swahili for Heroes). Bold monumental serif typography, heavyweight athletic silhouettes, celebrating the unsung heroes who gave us life and paved our paths.',
-    featuredTag: 'For Mashujaa'
+    featuredTag: ''
   },
   {
     id: 'kenyan-culture',
     name: 'Kenyan Culture Collection',
-    tagline: 'Roses for the Kulture',
+    tagline: '',
     description: 'Monochrome geometric adaptations of traditional patterns, Maasai shuka screen prints translated into high-contrast street luxury, and Swahili poetic scriptures.',
-    featuredTag: 'For the Kulture'
+    featuredTag: ''
   },
   {
     id: 'creative-art',
     name: 'Creative Art Collection',
-    tagline: 'Wearable Gallery & Archival Strokes',
+    tagline: '',
     description: 'Large-scale expressionist rose brushstrokes, canvas paintings translated onto raw cotton, and hand-pulled crackle discharge ink for a living art aesthetic.',
     featuredTag: 'Fine Art Edition'
   },
   {
     id: 'athletes',
     name: 'Athletes & Ballers Collection',
-    tagline: 'Court to Runway & Field Champions',
+    tagline: '',
     description: 'Engineered for basketballers, footballers, and modern athletic icons. Heavyweight double-knit mesh, breathable screen-printed numbers, and relaxed court shorts.',
     featuredTag: 'Athletic Couture'
   },
   {
     id: 'custom',
     name: 'Custom Bespoke Collection',
-    tagline: '1-of-1 Tailored Screen Print Apparel',
+    tagline: '',
     description: 'Bespoke customization suite. Select garment, ink depth (3D puff, discharge ink, foil shimmer), flower placement, and personalize a dedication to your own hero.',
-    featuredTag: 'Bespoke Studio'
+    featuredTag: 'Custom edition'
   },
   {
     id: 'denim-tears',
     name: 'Free Rose X Denim Tears',
-    tagline: 'A shared language of identity and heritage',
+    tagline: '',
     description: 'A collaborative collection bringing Free Rose’s floral tributes together with considered expressions of culture, identity, and heritage.',
     featuredTag: 'Collaborative Edition'
   },
   {
     id: 'off-white',
     name: 'Free Rose X Off-White',
-    tagline: 'Streetwear codes, reimagined in bloom',
+    tagline: '',
     description: 'A meeting of contemporary streetwear and the Free Rose signature, expressed through bold graphics and distinctive details.',
     featuredTag: 'Collaborative Edition'
   },
   {
     id: 'chrome-hearts',
     name: 'Free Rose X Chrome Hearts',
-    tagline: 'Gothic craft meets the rose',
+    tagline: '',
     description: 'An expressive collaboration pairing the Free Rose botanical emblem with a dark, handcrafted luxury sensibility.',
     featuredTag: 'Collaborative Edition'
   },
   {
     id: 'hba',
     name: 'Free Rose X HBA',
-    tagline: 'Provocative energy, personal meaning',
+    tagline: '',
     description: 'A boundary-pushing collaboration shaped by bold streetwear language and the Free Rose story of honoring those we love.',
     featuredTag: 'Collaborative Edition'
   },
   {
     id: 'lv',
     name: 'Free Rose X LV',
-    tagline: 'A timeless house code, in full bloom',
+    tagline: '',
     description: 'A considered take on luxury, bringing the Free Rose floral identity into a refined collaborative collection.',
     featuredTag: 'Collaborative Edition'
   },
   {
     id: 'ralph-lauren',
     name: 'Free Rose X Ralph Lauren',
-    tagline: 'American heritage with a Free Rose spirit',
+    tagline: '',
     description: 'Classic heritage silhouettes meet the Free Rose dedication to family, memory, and enduring personal style.',
     featuredTag: 'Collaborative Edition'
   }

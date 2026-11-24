@@ -99,7 +99,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                       Campaign AW26
                     </span>
                     <span className="font-editorial text-lg tracking-wide text-white">
-                      Homage to Rose
+                      Monochrome Campaign
                     </span>
                   </div>
                   <button
@@ -165,15 +165,12 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                   <div className="space-y-1.5">
                     <div className="flex items-center justify-between text-[10px] font-technical uppercase tracking-widest text-zinc-500">
-                      <span>0{index + 1} // {col.featuredTag}</span>
+                      <span>0{index + 1}{col.featuredTag && ` // ${col.featuredTag}`}</span>
                       <span>{count} Pieces</span>
                     </div>
                     <h3 className="font-editorial text-2xl text-white group-hover:text-zinc-200 transition-colors">
                       {col.name}
                     </h3>
-                    <p className="font-body text-xs text-zinc-400 font-light leading-relaxed">
-                      {col.tagline}
-                    </p>
                   </div>
                 </div>
 

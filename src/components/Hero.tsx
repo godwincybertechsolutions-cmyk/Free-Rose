@@ -86,7 +86,7 @@ export const Hero: React.FC<HeroProps> = ({
                     Campaign AW26
                   </span>
                   <span className="font-editorial text-lg tracking-wide text-white">
-                    Homage to Rose
+                    Monochrome Campaign
                   </span>
                 </div>
                 <button
