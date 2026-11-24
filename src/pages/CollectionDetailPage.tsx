@@ -80,14 +80,11 @@ export const CollectionDetailPage: React.FC<CollectionDetailPageProps> = ({
         <div className="lg:col-span-7 space-y-6">
           <div className="space-y-2">
             <span className="text-xs font-technical tracking-[0.3em] uppercase text-zinc-400 block">
-              Collection Dossier // {collection.featuredTag}
+              {collection.featuredTag ? `Collection Dossier // ${collection.featuredTag}` : 'Collection Dossier'}
             </span>
             <h1 className="font-editorial text-4xl sm:text-6xl text-white font-normal text-balance">
               {collection.name}
             </h1>
-            <p className="font-editorial text-xl italic text-zinc-300">
-              "{collection.tagline}"
-            </p>
           </div>
 
           <p className="font-body text-sm sm:text-base text-zinc-400 font-light leading-relaxed">
@@ -222,9 +219,11 @@ export const CollectionDetailPage: React.FC<CollectionDetailPageProps> = ({
               onClick={() => navigateTo('collection-detail', other.id)}
               className="p-4 bg-zinc-950 border border-zinc-900 hover:border-zinc-700 text-left transition-colors"
             >
-              <span className="text-[10px] font-technical uppercase tracking-wider text-zinc-500 block">
-                {other.featuredTag}
-              </span>
+              {other.featuredTag && (
+                <span className="text-[10px] font-technical uppercase tracking-wider text-zinc-500 block">
+                  {other.featuredTag}
+                </span>
+              )}
               <span className="font-editorial text-lg text-white block mt-1">
                 {other.name.replace(' Collection', '')}
               </span>

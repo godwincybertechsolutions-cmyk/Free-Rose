@@ -119,22 +119,6 @@ export const ProductModal: React.FC<ProductModalProps> = ({
               </p>
             </div>
 
-            {/* Screen Print & Fabric Craftsmanship Specs */}
-            <div className="space-y-3 p-4 bg-zinc-900/60 border border-zinc-800">
-              <div className="flex items-center gap-2 text-[11px] font-technical tracking-wider text-zinc-300 uppercase">
-                <Sparkles className="w-3.5 h-3.5 text-zinc-400" />
-                <span>Screen Print Formulation &amp; Textiles</span>
-              </div>
-              <p className="font-body text-xs text-zinc-400 leading-relaxed font-light">
-                <strong className="text-zinc-200 font-medium">Ink Chemistry: </strong>
-                {product.screenPrintStory}
-              </p>
-              <p className="font-body text-xs text-zinc-400 leading-relaxed font-light">
-                <strong className="text-zinc-200 font-medium">Textile Specs: </strong>
-                {product.fabricDetails}
-              </p>
-            </div>
-
             {/* Gender Selection */}
             <div className="space-y-2">
               <label className="block text-xs font-technical tracking-widest text-zinc-400 uppercase">

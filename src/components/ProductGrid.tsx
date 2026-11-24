@@ -124,11 +124,13 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
         {activeCollectionInfo && (
           <div className="p-6 bg-zinc-950 border border-zinc-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="space-y-1">
-              <span className="text-[10px] font-technical tracking-[0.25em] uppercase text-zinc-400 block">
-                {activeCollectionInfo.featuredTag}
-              </span>
+              {activeCollectionInfo.featuredTag && (
+                <span className="text-[10px] font-technical tracking-[0.25em] uppercase text-zinc-400 block">
+                  {activeCollectionInfo.featuredTag}
+                </span>
+              )}
               <h3 className="font-editorial text-2xl text-white">
-                {activeCollectionInfo.name} — {activeCollectionInfo.tagline}
+                {activeCollectionInfo.name}
               </h3>
               <p className="font-body text-xs text-zinc-400 max-w-2xl font-light">
                 {activeCollectionInfo.description}
