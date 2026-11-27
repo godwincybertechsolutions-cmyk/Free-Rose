@@ -145,14 +145,6 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs font-technical text-zinc-400">
               <li>
                 <button 
-                  onClick={() => navigateTo('lookbook')}
-                  className="hover:text-white transition-colors uppercase tracking-wider text-left"
-                >
-                  Autumn / Winter Lookbook
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => navigateTo('atelier')}
                   className="hover:text-white transition-colors uppercase tracking-wider text-left"
                 >

@@ -57,14 +57,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span>Custom Apparel</span>
           </button>
 
-          <button
-            onClick={() => navigateTo('lookbook')}
-            className={`hover:text-white transition-colors whitespace-nowrap shrink-0 py-1 border-b ${
-              currentPage === 'lookbook' ? 'text-white border-white' : 'border-transparent'
-            }`}
-          >
-            Lookbook
-          </button>
         </nav>
 
         {/* Zone 3: Sizing Matrix & Bag Action */}
@@ -109,12 +101,6 @@ export const Navbar: React.FC<NavbarProps> = ({
         >
             Apparel
 
-        </button>
-        <button 
-          onClick={() => navigateTo('lookbook')}
-          className={currentPage === 'lookbook' ? 'text-white font-bold' : ''}
-        >
-          Lookbook
         </button>
         <button 
           onClick={() => navigateTo('sizing')}
