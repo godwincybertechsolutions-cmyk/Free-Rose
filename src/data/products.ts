@@ -12,84 +12,96 @@ export const COLLECTIONS_DATA = [
     name: 'Wanisa Collection',
     tagline: '',
     description: 'Streaming platforms are not enough, Let’s give our artists their flowers.',
-    featuredTag: ''
+    featuredTag: '',
+    inspiredBy: ['Bob Marley', 'Tupac', 'Mejja', 'Toxic Lyrikali', 'Travis Scott', 'Brent Faiyaz', 'Drake', 'Snoop Dogg', 'Wiz Khalifa', 'Bien']
   },
   {
     id: 'mashujaa',
     name: 'Mashujaa Collection',
     tagline: '',
     description: 'Mashujaa (Swahili for Heroes). Bold monumental serif typography, heavyweight athletic silhouettes, celebrating the unsung heroes who gave us life and paved our paths.',
-    featuredTag: ''
+    featuredTag: '',
+    inspiredBy: ['Dedan Kimathi', 'Raila Odinga']
   },
   {
     id: 'kenyan-culture',
     name: 'Kenyan Culture Collection',
     tagline: '',
     description: 'Monochrome geometric adaptations of traditional patterns, Maasai shuka screen prints translated into high-contrast street luxury, and Swahili poetic scriptures.',
-    featuredTag: ''
+    featuredTag: '',
+    inspiredBy: ['Mathree Culture']
   },
   {
     id: 'creative-art',
     name: 'Creative Art Collection',
     tagline: '',
     description: 'Large-scale expressionist rose brushstrokes, canvas paintings translated onto raw cotton, and hand-pulled crackle discharge ink for a living art aesthetic.',
-    featuredTag: 'Fine Art Edition'
+    featuredTag: 'Fine Art Edition',
+    inspiredBy: []
   },
   {
     id: 'athletes',
     name: 'Athletes & Ballers Collection',
     tagline: '',
     description: 'Engineered for basketballers, footballers, and modern athletic icons. Heavyweight double-knit mesh, breathable screen-printed numbers, and relaxed court shorts.',
-    featuredTag: 'Athletic Couture'
+    featuredTag: 'Athletic Couture',
+    inspiredBy: ['Christian Ronaldo', 'Kobe Bryant', 'Lionel Messi', 'Lamine Yamal']
   },
   {
     id: 'custom',
     name: 'Custom Bespoke Collection',
     tagline: '',
     description: 'Bespoke customization suite. Select garment, ink depth (3D puff, discharge ink, foil shimmer), flower placement, and personalize a dedication to your own hero.',
-    featuredTag: 'Custom edition'
+    featuredTag: 'Custom edition',
+    inspiredBy: []
   },
   {
     id: 'denim-tears',
     name: 'Free Rose X Denim Tears',
     tagline: '',
     description: 'A collaborative collection bringing Free Rose’s floral tributes together with considered expressions of culture, identity, and heritage.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
+    inspiredBy: []
   },
   {
     id: 'off-white',
     name: 'Free Rose X Off-White',
     tagline: '',
     description: 'A meeting of contemporary streetwear and the Free Rose signature, expressed through bold graphics and distinctive details.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
+    inspiredBy: []
   },
   {
     id: 'chrome-hearts',
     name: 'Free Rose X Chrome Hearts',
     tagline: '',
     description: 'An expressive collaboration pairing the Free Rose botanical emblem with a dark, handcrafted luxury sensibility.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
+    inspiredBy: []
   },
   {
     id: 'hba',
     name: 'Free Rose X HBA',
     tagline: '',
     description: 'A boundary-pushing collaboration shaped by bold streetwear language and the Free Rose story of honoring those we love.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
+    inspiredBy: []
   },
   {
     id: 'lv',
     name: 'Free Rose X LV',
     tagline: '',
     description: 'A considered take on luxury, bringing the Free Rose floral identity into a refined collaborative collection.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
+    inspiredBy: []
   },
   {
     id: 'ralph-lauren',
     name: 'Free Rose X Ralph Lauren',
     tagline: '',
     description: 'Classic heritage silhouettes meet the Free Rose dedication to family, memory, and enduring personal style.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
+    inspiredBy: []
   }
 ] as const;
 
