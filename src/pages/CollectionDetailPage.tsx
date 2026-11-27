@@ -91,19 +91,6 @@ export const CollectionDetailPage: React.FC<CollectionDetailPageProps> = ({
             {collection.description}
           </p>
 
-          {collection.inspiredBy.length > 0 && (
-            <section aria-label="Collection inspirations" className="space-y-3">
-              <h2 className="text-[11px] font-technical uppercase tracking-[0.2em] text-zinc-500">Inspired by</h2>
-              <ul className="flex flex-wrap gap-2">
-                {collection.inspiredBy.map((name) => (
-                  <li key={name} className="border border-zinc-800 bg-zinc-950 px-3 py-2 text-xs tracking-wide text-zinc-200">
-                    {name}
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
-
           <div className="p-4 bg-zinc-950 border border-zinc-800 grid grid-cols-3 gap-4 text-[11px] font-technical uppercase tracking-wider text-zinc-400">
             <div>
               <span className="text-zinc-600 block">Cut</span>
