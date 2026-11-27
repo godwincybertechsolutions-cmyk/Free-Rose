@@ -33,7 +33,7 @@ export const COLLECTIONS_DATA = [
     name: 'Creative Art Collection',
     tagline: '',
     description: 'Large-scale expressionist rose brushstrokes, canvas paintings translated onto raw cotton, and hand-pulled crackle discharge ink for a living art aesthetic.',
-    featuredTag: 'Fine Art Edition'
+    featuredTag: 'Fine Art Edition',
   },
   {
     id: 'athletes',
@@ -47,49 +47,49 @@ export const COLLECTIONS_DATA = [
     name: 'Custom Bespoke Collection',
     tagline: '',
     description: 'Bespoke customization suite. Select garment, ink depth (3D puff, discharge ink, foil shimmer), flower placement, and personalize a dedication to your own hero.',
-    featuredTag: 'Custom edition'
+    featuredTag: 'Custom edition',
   },
   {
     id: 'denim-tears',
     name: 'Free Rose X Denim Tears',
     tagline: '',
     description: 'A collaborative collection bringing Free Rose’s floral tributes together with considered expressions of culture, identity, and heritage.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
   },
   {
     id: 'off-white',
     name: 'Free Rose X Off-White',
     tagline: '',
     description: 'A meeting of contemporary streetwear and the Free Rose signature, expressed through bold graphics and distinctive details.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
   },
   {
     id: 'chrome-hearts',
     name: 'Free Rose X Chrome Hearts',
     tagline: '',
     description: 'An expressive collaboration pairing the Free Rose botanical emblem with a dark, handcrafted luxury sensibility.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
   },
   {
     id: 'hba',
     name: 'Free Rose X HBA',
     tagline: '',
     description: 'A boundary-pushing collaboration shaped by bold streetwear language and the Free Rose story of honoring those we love.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
   },
   {
     id: 'lv',
     name: 'Free Rose X LV',
     tagline: '',
     description: 'A considered take on luxury, bringing the Free Rose floral identity into a refined collaborative collection.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
   },
   {
     id: 'ralph-lauren',
     name: 'Free Rose X Ralph Lauren',
     tagline: '',
     description: 'Classic heritage silhouettes meet the Free Rose dedication to family, memory, and enduring personal style.',
-    featuredTag: 'Collaborative Edition'
+    featuredTag: 'Collaborative Edition',
   }
 ] as const;
 
@@ -102,7 +102,7 @@ export const CATEGORIES_DATA = [
   { id: 'canvas-paintings', name: 'Canvas Paintings' },
 ] as const;
 
-export const PRODUCTS_CATALOG: Product[] = [
+const PRODUCTS_CATALOG_BASE: Product[] = [
   // 1. WANISA COLLECTION
   {
     id: 'wanisa-01',
@@ -410,6 +410,27 @@ export const PRODUCTS_CATALOG: Product[] = [
     image: PRODUCT_CANVAS_ART,
     editionLimit: 'Bespoke Art'
   }
+];
+
+const COLLECTION_CREATION_NAMES: Partial<Record<Product['collectionId'], string[]>> = {
+  wanisa: ['Bob Marley', 'Tupac', 'Mejja', 'Toxic Lyrikali', 'Travis Scott', 'Brent Faiyaz', 'Drake', 'Snoop Dogg', 'Wiz Khalifa', 'Bien'],
+  'kenyan-culture': ['Mathree Culture'],
+  mashujaa: ['Dedan Kimathi', 'Raila Odinga'],
+  athletes: ['Christian Ronaldo', 'Kobe Bryant', 'Lionel Messi', 'Lamine Yamal'],
+};
+
+export const PRODUCTS_CATALOG: Product[] = [
+  ...PRODUCTS_CATALOG_BASE.filter((product) => !COLLECTION_CREATION_NAMES[product.collectionId]),
+  ...Object.entries(COLLECTION_CREATION_NAMES).flatMap(([collectionId, names]) => {
+    const template = PRODUCTS_CATALOG_BASE.find((product) => product.collectionId === collectionId);
+    if (!template) return [];
+
+    return (names ?? []).map((name) => ({
+      ...template,
+      id: `${collectionId}-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+      name,
+    }));
+  }),
 ];
 
 export const SIZING_GUIDE_DATA = {
